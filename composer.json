@@ -1,0 +1,40 @@
+{
+    "name": "ablunier/laravel-blog",
+    "description": "",
+    "authors": [
+        {
+            "name": "Adrian P. Blunier",
+            "email": "adrian@blunier.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "illuminate/database": "5.0.*",
+        "dimsav/laravel-translatable": "5.1",
+        "javiereguiluz/easyslugger": "1.0.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "0.9.*"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "classmap": [
+            "migrations",
+            "tests"
+        ],
+        "psr-4": {
+            "ANavallaSuiza\\Laravel\\Blog\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ANavallaSuiza\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}
