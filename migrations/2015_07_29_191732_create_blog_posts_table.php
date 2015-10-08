@@ -43,7 +43,7 @@ class CreateBlogPostsTable extends Migration
 
         Schema::table('blog_posts_translations', function (Blueprint $table) {
             $table->foreign('blog_post_id')
-                ->references('id')->on('blog_post')
+                ->references('id')->on('blog_posts')
                 ->onDelete('cascade');
         });
     }
