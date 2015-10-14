@@ -31,4 +31,9 @@ abstract class Post extends EloquentModel
     {
         return $this->belongsToMany('ANavallaSuiza\Laravel\Blog\Database\Models\Tag');
     }
+    
+    public function media()
+    {
+        return $this->hasMany('ANavallaSuiza\Laravel\Blog\Database\Models\PostMedia', 'blog_post_id');
+    }
 }
