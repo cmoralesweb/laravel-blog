@@ -14,6 +14,7 @@ class CreateBlogPostsTable extends Migration
     {
         Schema::create('blog_posts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('image')->nullable();
 
             $table->unsignedInteger('author_id');
             $table->unsignedInteger('category_id')->nullable();
