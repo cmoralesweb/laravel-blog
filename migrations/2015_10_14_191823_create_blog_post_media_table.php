@@ -18,7 +18,6 @@ class CreateBlogPostMediaTables extends Migration
 
             $table->string('media')->nullable();
             $table->integer('sort');
-            $table->boolean('enabled');
 
             $table->integer('blog_post_id')->unsigned();
         });
